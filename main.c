@@ -1,5 +1,4 @@
 #include "monty.h"
-#include "stdio.h"
 void execute(char *string[], stack_t *stack);
 
 /**
@@ -52,9 +51,9 @@ void execute(char *string[], stack_t *stack)
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
-		{"swap", swap}
+		{"swap", swap},
+		{"add", add}
 /**
- *		{"add", add},
  *		{"null", NULL}
 */
 	};
