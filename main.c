@@ -1,5 +1,5 @@
 #include "monty.h"
-
+#include "stdio.h"
 void execute(char *string[], stack_t *stack);
 
 /**
@@ -32,7 +32,7 @@ int main(int ac, char *av[])
 	for (n = 0; getline(&(string[n]), &bufsize, fd) > 0; n++)
 		;
 	execute(string, stack);
-	free_list(string);
+	/*free_list(string);*/
 	fclose(fd);
 	return (0);
 }
@@ -50,11 +50,13 @@ void execute(char *string[], stack_t *stack)
 
 	instruction_t st[] = {
 		{"pall", pall},
+/**
 		{"pint", pint},
 		{"add", add},
 		{"swap", swap},
 		{"pop", pop},
 		{"null", NULL}
+*/
 	};
 
 	for (ln = 1, n = 0; string[n + 1]; n++, ln++)
@@ -84,5 +86,5 @@ void execute(char *string[], stack_t *stack)
 			}
 		}
 	}
-	free_stack(stack);
+	/*free_stack(stack)*/
 }
