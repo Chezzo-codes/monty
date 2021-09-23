@@ -1,5 +1,7 @@
 #include "monty.h"
 
+void execute(char *string[], stack_t *stack);
+
 /**
  * main - monty interperter
  * @ac: the number of arguments
