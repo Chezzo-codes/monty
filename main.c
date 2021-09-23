@@ -52,9 +52,9 @@ void execute(char *string[], stack_t *stack)
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
+		{"swap", swap}
 /**
  *		{"add", add},
- *		{"swap", swap},
  *		{"null", NULL}
 */
 	};
