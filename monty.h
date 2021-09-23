@@ -37,4 +37,9 @@ typedef struct instruction_s
 void push(stack_t **stack, unsigned int line_num);
 void pall(stack_t **stack, unsigned int line_num);
 
+/*Helpers*/
+int _strcmp(char *opcode, char *list);
+int nlfind(char *list);
+int pushint(char *list, int ln);
+int combfind(char *list, int ln);
 #endif
