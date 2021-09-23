@@ -51,11 +51,11 @@ void execute(char *string[], stack_t *stack)
 	instruction_t st[] = {
 		{"pall", pall},
 /**
-		{"pint", pint},
-		{"add", add},
-		{"swap", swap},
-		{"pop", pop},
-		{"null", NULL}
+ *		{"pint", pint},
+ *		{"add", add},
+ *		{"swap", swap},
+ *		{"pop", pop},
+ *		{"null", NULL}
 */
 	};
 
