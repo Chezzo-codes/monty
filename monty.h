@@ -44,7 +44,7 @@ typedef struct instruction_s
 /*Opcodes*/
 void push(stack_t **stack, unsigned int line_num, int n);
 void pall(stack_t **stack, unsigned int line_num);
-
+void pint(stack_t **stack, unsigned int line_num);
 /*Helpers*/
 int _strcmp(char *opcode, char *list);
 int nlfind(char *list);
